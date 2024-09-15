@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<ctype.h>
+int main(int argc, char** argv){
+FILE * f1, * f2; int ch;
+f1= fopen (argv[1], "r");
+f2= fopen (argv[2], "w");
+if ( f1==0 || f2==0) {
+puts (" Eroare la deschidere fişiere \n");
+ 
+return 1;
+}
+while ( (ch=fgetc(f1)) != EOF) // citeste din f1
+fputc ( tolower(ch),f2); // scrie în f2
+fclose(f1);
+fclose(f2);
+return 0;
+}

@@ -1,0 +1,1 @@
+struct student *tag = ( struct student * ) malloc ( sizeof ( struct student ) * 5);

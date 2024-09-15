@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(){
+    char c ;
+    FILE *fp;
+
+    fp = fopen("test.txt","r");
+    if(fp == NULL){
+    puts("Open file failed\n");
+    exit(-1);
+    }
+
+    while(fscanf(fp,"%c\n",&c)!=EOF){
+        printf("%c", c);
+    }
+
+    fclose(fp);
+    exit(0);
+}
+
+
+
+while ( ! feof(f1)) // cat tump nu e EOF

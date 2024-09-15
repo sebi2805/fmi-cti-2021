@@ -1,0 +1,1 @@
+(x<<n)|(x>>(8*sizeof(int)-n) //ROTIRE BITI CU N BITI STANGA

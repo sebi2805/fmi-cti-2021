@@ -1,0 +1,9 @@
+void numarbinar(int x, FILE *f)
+{
+    if(x != 0)
+    {
+        numarbinar(x/2,f);
+        int rest = x % 2;
+        fprintf(f,"%d",rest);
+    }
+}
