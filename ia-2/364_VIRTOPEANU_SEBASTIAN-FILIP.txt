@@ -1,0 +1,46 @@
+# Virtopeanu Sebastian-Filip Gr. 364
+
+1. Acuratetea modelului este datat de suma elementelor pe diagonala principala impartit la suma tuturor elementelor
+in acest caz aveam:
+75+85+60 = 220
+--------
+75+85+60+15+20+7+8+10+20 = 300
+Accuracy = 220/300 = 0.73  =73%
+
+2.
+Teorema lui Bayes 
+P(C=i|x) = P(X|C=i) * P(C=i) / P(x)
+ceea ce inseamna ca dat fiind x probabilitea ca acesta sa apartina in clasa C este data de probabilitea de a obtine X fiind dat clasa C inmultita cu probabilitea ca aceea clasa sa apara 
+P(C) este probabilitea apriorii, data de frecventa acelei clase in datelor noastre
+
+P(zgomot  | urs) = 0.95
+P(zgomot) = 0.2
+P(urs) = 0.05 
+
+astfel probabilitatea ca fiind dat un zgomot acesta sa fie un urs este:
+P(urs|zgomot) = 0.95*0.05/0.2 = 0.2375 = 23.75%
+
+3. Pentru a alege parametru K in algoritmul Kmeans (acesta reprezentand numarul de centroizi) folosim elbow-method
+astfel incercam sa clusterizam datele noastre cu un k =[1,n], iar cand numarul de clustere nu 
+mai imbunateste semnificativ inertia clustelor putem spune ca un K mai mare va influenta doar timpul de 
+calcul
+Deci alegerea lui k consta in imbunatirea distantei dintre clustere, dar si distanta din cluster deoarece dorim 
+ca punctele dintr-un clustere sa fie cat mai apropiate de clusterul lor. 
+
+4.
+Clusterizarea este procesul prin care dorim sa grupam datele noastre in diferite categorii 
+fara a avea access la label acestora. Astfel de algoritmi nesupervizati sunt:
+1. KMeans care grupeaza punctele noastre la cel mai apropiat centroid si ulterior repozitioneaza centroidul
+2. DBSCAN care grupeaza punctele noastre daca exista N vecini intr-un eps radius. Acest algoritm poate face clusterizare mai bine
+atunci cand avem date care nu sunt liniar separabile si avem outlieri destul de multi
+
+Clasificarea este procesul prin care pe baza unui set de date care contine labeluri putem 
+prezice clasele viitoarelor date. Astfel de algoritmi supervizati sunt:
+1. KNN - in care putem clasifica un punct in functie de votul majoritar al vecinilor
+2. Naive Bayes - in care ne folosim de teorema de probabilitatea a lui Bayes 
+3. SVM - in care incercam sa gasim vectori care despart cat mai bine datelor noastre 
+etc.. 
+
+
+
+
