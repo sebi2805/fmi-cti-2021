@@ -1,0 +1,30 @@
+class A
+{
+protected:
+    int n;
+
+public:
+    A()
+    {
+        n = 11;
+    }
+    int getn() { return n; }
+    void addn(int x) { n += x; }
+    virtual ~A(){};
+};
+class B : public A
+{
+protected:
+    int m;
+
+public:
+    B(int i) : A() { m = 12; }
+    int getm() { return m; }
+};
+int main()
+{
+    A *x = new A;
+    x->addn(x->getn());
+    B *y = static_cast<B *>(x);
+    cout << y->getn();
+}

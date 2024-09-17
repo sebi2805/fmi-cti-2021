@@ -1,0 +1,23 @@
+class A
+{
+    static int x;
+    int y;
+
+public:
+    A(int i)
+    {
+        x = i;
+        y = -i + 3;
+    }
+    int put_x(A a)
+    {
+        return x + a.y;
+    }
+};
+ 
+int main()
+{
+    A a(2);
+    cout << a.put_x(26);
+    return 0;
+}

@@ -1,0 +1,24 @@
+class Test
+{
+    int i;
+
+public:
+    Test(int x = 0) : i(x) { cout << "C "; };
+    Test(const Test &x)
+    {
+        i = x.i;
+        cout << "CC ";
+    }
+    ~Test() { cout << "D "; }
+};
+int main()
+{
+    vector<Test> v;
+    v.push_back(1);
+    Test ob(3);
+    v.push_back(ob);
+    Test &ob2 = ob;
+    // cout << endl;
+    v.push_back(ob2);
+    return 0;
+}

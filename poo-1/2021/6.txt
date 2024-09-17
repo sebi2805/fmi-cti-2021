@@ -1,0 +1,24 @@
+class C
+{
+public:
+    C() {}
+    ~C()
+    {
+        throw "s";
+    };
+};
+int main()
+{
+
+    try
+    {
+        C c;
+        throw "excetion";
+    }
+    catch (const char *s)
+    {
+        cout << s;
+    }
+
+    return 0;
+}

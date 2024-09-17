@@ -1,0 +1,14 @@
+class cls
+{
+    int v;
+
+public:
+    cls(int v = 0) { this->v = v; }
+    const int &getV() const { return v; }
+};
+int main()
+{
+    const cls *x = new cls(2021);
+    cout << x->getV();
+    return 0;
+}

@@ -1,0 +1,25 @@
+class A
+{
+    int x;
+
+public:
+    A(int i = 0) { x = i; }
+    A operator+(const A &a) { return x + a.x; }
+    template <class T>
+    ostream &operator<<(ostream &);
+};
+template <class T>
+ostream &A::operator<<(ostream &o)
+{
+    o << x;
+    return o;
+}
+
+;
+int main()
+{
+    A a1(10), a2(20), a3;
+    a3 = a1 + a2;
+    cout << a3;
+    return 0;
+}

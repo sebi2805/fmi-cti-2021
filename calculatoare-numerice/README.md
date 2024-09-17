@@ -1,0 +1,1 @@
+Nu am ramas aproape cu nimic de la cursul asta, am mai vazut un limbaj de programare numit verilog si am aflat ca mai exista un tip de tranzistor. Cursul este destul de teoretic si ii inteleg pentru ca nu primesc finantare pentru arduino sau altceva, au spus ca in viitor vor sa integreze asta.

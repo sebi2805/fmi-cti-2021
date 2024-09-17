@@ -1,0 +1,1 @@
+parametrul sa fie transmis drept pointer si sa avem functii virtuale

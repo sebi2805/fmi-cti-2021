@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+class B
+{
+    protected: int x;
+    public: B(int i=14) {x=i;}
+};
+class D: B
+{
+    public: D(B ob){ x=ob.x;}
+    void afisare() {cout<<x;}
+};
+int main()
+{
+    B ob1;
+    D ob2(ob1);
+    ob2.afisare();
+    return 0;
+}

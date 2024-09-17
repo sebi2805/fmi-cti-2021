@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+class B
+{
+    protected: int x;
+    public: B(int i=105) {x=i;}
+    virtual get_x()=0;
+};
+class D: public B
+{
+    public: D(int i):B(i){}
+    D operator+(const D& {return x+a.x;}
+};
+int main()
+{
+    D ob(17),ob2(-12);
+    cout<<(ob1+ob2).get_x();
+    return 0;
+}

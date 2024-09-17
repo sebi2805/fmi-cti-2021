@@ -1,0 +1,26 @@
+class A
+{
+public:
+    A() { cout << "a" << endl; }
+    ~A() { cout << "A" << endl; };
+};
+class B : public A
+{
+public:
+    B() { cout << "b" << endl; }
+    ~B() { cout << "8" << endl; }
+} p;
+class C : public B
+{
+    B n;
+
+public:
+    C() : B() { cout << "c" << endl
+                     << endl; }
+    ~C() { cout << "C" << endl; }
+} o;
+int main()
+{
+    C o;
+    A b;
+}
